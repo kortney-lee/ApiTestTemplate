@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Kortn/Downloads/ApiTestTemplate/src/test">
+            <parameter name="authUrl" value="https://apiexampleoAuth.com/auth"/>
+            <parameter name="authUsername" value="username"/>
+            <parameter name="authPassword" value="password"/>
+            <parameter name="dbUrl" value="mysql://localhost:/mydatabase"/>
+            <parameter name="dbUser" value="db_username"/>
+            <parameter name="dbPassword" value="db_password"/>
+            <parameter name="baseUrl" value="https://test.com"/>
+            <parameter name="endpoint" value="/api/endpoint"/>
+            <classes>
+            <class name="ApiTestTemplate"/>
+        </classes>
+    </test>
+</suite>
